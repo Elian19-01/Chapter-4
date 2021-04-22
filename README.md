@@ -31,6 +31,7 @@ int main()
 }
 ```
 ## Exercise 4-3: Write a program to compute the area and perimeter of a rectangle with a width of three inches and a height of five inches. What changes must be made to the program so that it works for a rectangle with a width of 6.8 inches and a length of 2.3 inches?
+
 ```c
 #include <stdio.h> 
 /* height and width of a rectangle in inches */
@@ -51,5 +52,41 @@ int main() {
    printf("Area of the rectangle = %d square inches\n", area);
 
 return(0);
+}
+```
+If we wanted to change the data, you just have to run the program again and put the new information
+## Exercise 4-4: Write a program to print "HELLO" in big block letters; each letter should have a height of seven characters and width of five characters.
+```c
+#include <stdio.h>
+
+int main() {
+   printf("H   H EEEEE L     L      OOO\n");
+   printf("H   H E     L     L     O   O\n");
+   printf("H   H E     L     L     O   O\n");
+   printf("HHHHH EEEEE L     L     O   O\n");
+   printf("H   H E     L     L     O   O\n");
+   printf("H   H E     L     L     O   O\n");
+   printf("H   H EEEEE LLLLL LLLLL  OOO\n");
+
+   return(0);
+}
+```
+```c
+#include <stdio.h>
+
+float floatnum;    
+int intnum;         
+char character;     
+
+int main() {
+   floatnum = 1.0;
+   intnum = 1;
+   character = 'A';
+
+   printf("%f as %%d: %d\n", floatnum, floatnum);
+   printf("%d as %%f: %f\n", intnum, intnum);
+   printf("%c as %%d: %d\n", character, character);
+
+   return(0);
 }
 ```
